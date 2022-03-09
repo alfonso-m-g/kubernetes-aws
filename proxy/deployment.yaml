@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-deployment
+  name: proxy-deployment
   namespace: g4
   labels:
-    app: backend
+    app: proxy
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: backend
+      app: proxy
   template:
     metadata:
       labels:
-        app: backend
+        app: proxy
     spec:
       containers:
-      - name: backend
-        image: zarakmughal/nodejs-starter:1.0
+      - name: proxy
+        image: nginx:stable-alpine
         ports:
-        - containerPort: 5000
+        - containerPort: 80
