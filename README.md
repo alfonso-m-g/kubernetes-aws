@@ -16,3 +16,8 @@ cd node_files
 npm init -y
 npm install express --save
 ```
+
+# LoadBalancer URLs
+[Frontend app](ae0c1bb956414410b9a1321dc5f6bc87-1681405081.us-east-2.elb.amazonaws.com)
+
+[Backend app](a1bd5cde2fbd54f2384642d9162b223c-470616534.us-east-2.elb.amazonaws.com)
