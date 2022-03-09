@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Frontend</title>
+<title>Frontend Group 4</title>
 <script>
 window.onload = function () {
-     fetch('backend:5000/', { method: 'get'}).then((response) => {
+     fetch('http://a1bd5cde2fbd54f2384642d9162b223c-470616534.us-east-2.elb.amazonaws.com', { method: 'get'}).then((response) => {
          const json = response.json();
          if (response.ok) {
              return json;
@@ -23,5 +23,6 @@ window.onload = function () {
 <h1>My Application Version XD</h1>
 <p id="version"></p>
 <p id="error"></p>
+<img src="https://www.programaenlinea.net/wp-content/uploads/2021/12/amazon-web-services-curso.png" alt="">
 </body>
 </html>

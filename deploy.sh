@@ -16,4 +16,4 @@ kubectl apply -f ./proxy/service.yaml
 PROXY_POD_NAME=$(kubectl get pods --no-headers -n g4 -o custom-columns=":metadata.name" | grep proxy)
 kubectl cp ./proxy_files/default.conf g4/$PROXY_POD_NAME:./etc/nginx/conf.d/default.conf
 
-kubectl apply -f ./loadBalancer/loadBalancer.yaml
+# kubectl apply -f ./loadBalancer/loadBalancer.yaml

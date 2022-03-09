@@ -5,4 +5,4 @@ kubectl delete -f ./backend/service.yaml
 kubectl delete -f ./frontend/deployment.yaml
 kubectl delete -f ./frontend/service.yaml
 
-kubectl delete -f ./loadBalancer/loadBalancer.yaml
+# kubectl delete -f ./loadBalancer/loadBalancer.yaml
